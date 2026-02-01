@@ -1,6 +1,6 @@
 {
   "name": "test-release-please",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "type": "module",
   "engines": {
@@ -10,7 +10,7 @@
     "registry": "https://npm.pkg.github.com/"
   },
   "exports": {
-    ".":{
+    ".": {
       "types": "./dist/index.d.mts",
       "import": "./dist/index.mjs"
     }
