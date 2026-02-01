@@ -59,6 +59,8 @@ jobs:
         id: release
         with:
           release-type: node
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           
       - name: Upload Release Artifact
         if: ${{ steps.release.outputs.release_created }}
