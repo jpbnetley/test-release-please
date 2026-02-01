@@ -27,6 +27,9 @@ pnpm test
 This repository is set up for automated releases using [release-please](https://github.com/googleapis/release-please).
 [Release please action](https://github.com/googleapis/release-please-action)
 
-## License
+## Notes
+Remember to set the permisson for github actions to make pull requests
+Workflow permissions
+Choose whether GitHub Actions can create pull requests or submit approving pull request reviews.
 
-MIT
+Allow GitHub Actions to create and approve pull requests
