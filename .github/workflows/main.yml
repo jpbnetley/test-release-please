@@ -1,4 +1,9 @@
+
 name: Build Project
+
+permissions:
+  contents: write
+  pull-requests: write
 
 on:
   push:
