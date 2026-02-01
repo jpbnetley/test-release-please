@@ -33,7 +33,7 @@ jobs:
       - name: Upload build artifacts
         uses: actions/upload-artifact@v6
         with:
-          name: build-artifacts
+          name: dist
           path: dist/
 
   release:
@@ -48,21 +48,21 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
-        
+
       - name: Download build artifacts
         uses: actions/download-artifact@v6
         with:
-          name: build-artifacts
+          name: dist
 
       - name: Create Release
         uses: googleapis/release-please-action@v4
         id: release
         with:
           release-type: node
-          path: build-artifacts
+          path: dist
           
       - name: Upload Release Artifact
         if: ${{ steps.release.outputs.release_created }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: gh release upload ${{ steps.release.outputs.tag_name }} ./artifact/some-build-artifact.zip
+        run: gh release upload ${{ steps.release.outputs.tag_name }} ./dist.zip
