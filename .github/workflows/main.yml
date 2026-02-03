@@ -68,13 +68,12 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Upload Release Artifact
-        if: ${{ steps.release.outputs.release_created }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          ls
-          gh release upload ${{ steps.release.outputs.tag_name }} ./dist
+      # - name: Upload Release Artifact
+      #   if: ${{ steps.release.outputs.release_created }}
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #   run: |
+      #     gh release upload ${{ steps.release.outputs.tag_name }} ./dist
 
       - name: Install pnpm
         uses: pnpm/action-setup@v4
