@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.5](https://github.com/jpbnetley/test-release-please/compare/v1.1.4...v1.1.5) (2026-02-03)
+
+
+### Bug Fixes
+
+* update deps ([#28](https://github.com/jpbnetley/test-release-please/issues/28)) ([4380cbf](https://github.com/jpbnetley/test-release-please/commit/4380cbf38fb734ae2811f06695a2d35ed2004fbb))
+
 ## [1.1.4](https://github.com/jpbnetley/test-release-please/compare/v1.1.3...v1.1.4) (2026-02-03)
 
 
