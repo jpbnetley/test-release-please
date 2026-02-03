@@ -9,6 +9,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
+  "files": ["dist"],
   "exports": {
     ".": {
       "types": "./dist/index.d.mts",
