@@ -58,6 +58,7 @@ jobs:
         uses: actions/download-artifact@v6
         with:
           name: dist
+          path: dist
 
       - name: Create Release
         uses: googleapis/release-please-action@v4
